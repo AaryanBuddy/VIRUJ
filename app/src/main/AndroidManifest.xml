@@ -13,6 +13,9 @@
         android:theme="@style/Theme.VIRUJ"
         tools:targetApi="31">
         <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
             android:name=".brief3"
             android:exported="false" />
         <activity
