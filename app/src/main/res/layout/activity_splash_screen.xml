@@ -25,10 +25,10 @@
         android:layout_width="143dp"
         android:layout_height="72dp"
         android:layout_marginTop="4dp"
-        android:text="@string/viruj"
-        android:textSize="48sp"
-        android:textColor="@color/black"
         android:fontFamily="@font/poppinsbold"
+        android:text="VIRUJ"
+        android:textColor="@color/black"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
