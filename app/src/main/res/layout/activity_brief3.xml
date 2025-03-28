@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonbrief1"
+        android:id="@+id/buttonbrief3"
         android:layout_width="135dp"
         android:layout_height="55dp"
         android:layout_marginBottom="62dp"
