@@ -1,14 +1,305 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragment.ProfileFragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Fragment.ProfileFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:id="@+id/top_bar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="70dp"
+        android:background="#2196F3"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/back_button"
+            android:src="@drawable/back_button" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/trail_icon"
+            android:paddingEnd="10dp"
+            android:text="@string/edit"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            tools:ignore="RelativeOverlap,RtlSymmetry,UseCompatTextViewDrawableXml" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative"
+    app:layout_constraintTop_toBottomOf="@id/top_bar"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="40dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_marginBottom="15dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_profile"
+        />
+
+    <ImageView
+        android:id="@+id/qrCode"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@id/profileImage"
+        android:layout_marginStart="-45dp"
+        android:layout_marginTop="106dp"
+        android:layout_toEndOf="@id/profileImage"
+        android:contentDescription="@string/qr"
+        android:src="@drawable/qr_code"  />
+
+</RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@id/relative"
+        app:layout_constraintStart_toStartOf="@id/relative"
+        app:layout_constraintEnd_toEndOf="@id/relative"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="@id/userName"
+        app:layout_constraintEnd_toEndOf="@id/userName"
+        app:layout_constraintTop_toBottomOf="@id/userName"
+        android:contentDescription="@string/line"
+        app:srcCompat="@drawable/line" />
+
+    <TextView
+        android:id="@+id/UserDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/imageView8"
+        app:layout_constraintStart_toStartOf="@id/imageView8"
+        app:layout_constraintEnd_toEndOf="@id/imageView8"
+        android:text="Age :    Blood Group : "
+        android:fontFamily="@font/poppinsbold"/>
+
+    <TextView
+        android:id="@+id/vitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/UserDetails"
+        app:layout_constraintStart_toStartOf="@id/UserDetails"
+        app:layout_constraintEnd_toEndOf="@id/UserDetails"
+        android:text="Blood Pressure   Heart Rate "
+        android:fontFamily="@font/poppinslight"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1"
+        app:layout_constraintTop_toBottomOf="@id/vitals"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con"
+            android:layout_marginLeft="35dp">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/medical_state"
+            android:id="@+id/medicalstate"
+            app:layout_constraintTop_toTopOf="@id/con"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintStart_toStartOf="@id/con"
+            app:layout_constraintEnd_toEndOf="@id/con"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical State"
+            app:layout_constraintTop_toBottomOf="@id/medicalstate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinslight"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con2"
+            android:layout_marginLeft="35dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/medical_state"
+                android:contentDescription="@string/app_name"
+                android:id="@+id/lifestyle"
+                app:layout_constraintTop_toTopOf="@id/con2"
+                app:layout_constraintStart_toStartOf="@id/con2"
+                app:layout_constraintEnd_toEndOf="@id/con2"
+                android:background="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Life Style"
+                app:layout_constraintTop_toBottomOf="@id/lifestyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinslight"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con3"
+            android:layout_marginLeft="35dp">
+
+            <ImageButton
+                android:id="@+id/drugallergy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/medical_state"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/con3"
+                app:layout_constraintTop_toTopOf="@id/con3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drug Allergy"
+                app:layout_constraintTop_toBottomOf="@id/drugallergy"
+                android:fontFamily="@font/poppinslight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con4"
+            android:layout_marginLeft="35dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/medical_state"
+                android:id="@+id/foodallergy"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintTop_toTopOf="@id/con4"
+                app:layout_constraintStart_toStartOf="@id/con4"
+                app:layout_constraintEnd_toEndOf="@id/con4"
+                android:background="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food Allergy"
+                app:layout_constraintTop_toBottomOf="@id/foodallergy"
+                android:fontFamily="@font/poppinslight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con5"
+            android:layout_marginLeft="35dp">
+            <ImageButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/settings"
+                android:id="@+id/settings"
+                app:layout_constraintTop_toTopOf="@id/con5"
+                android:contentDescription="@string/app_name"
+                app:layout_constraintStart_toStartOf="@id/con5"
+                app:layout_constraintEnd_toEndOf="@id/con5"
+                android:background="@color/white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                app:layout_constraintTop_toBottomOf="@id/settings"
+                app:layout_constraintStart_toStartOf="parent"
+                android:fontFamily="@font/poppinslight"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/con6"
+            android:layout_marginLeft="35dp">
+
+            <ImageButton
+                android:id="@+id/coins"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:contentDescription="@string/app_name"
+                android:background="@color/white"
+                android:src="@drawable/v"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/con6"
+                app:layout_constraintTop_toTopOf="@id/con6" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drug Allergy"
+                android:fontFamily="@font/poppinslight"
+                app:layout_constraintTop_toBottomOf="@id/coins"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="4dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+   </androidx.constraintlayout.widget.ConstraintLayout>

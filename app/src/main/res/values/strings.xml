@@ -13,8 +13,25 @@
     <string name="google">google</string>
     <string name="mac">mac</string>
     <string name="facebook">facebook</string>
+    <string name="edit">Edit</string>
+    <string name="qr">qr</string>
+    <string name="medical_button">Medical button</string>
+    <string name="medical_state">Medical State</string>
     <string name="twitter">twitter</string>
     <string name="viruj">VIRUJ</string>
+    <string name="back_button">Back button</string>
+    <string name="your_name">Your Name</string>
+    <string name="line">line</string>
+    <string name="blue_box">Blue Box</string>
+    <string name="medical_icon">Medical Icon</string>
+    <string name="lifestyle_icon">LifeStyle Icon</string>
+    <string name="lifestyle">LifeStyle</string>
+    <string name="drug_allergy_icon">Drug Allergy icon</string>
+    <string name="drug_allergy">Drug Allergy</string>
+    <string name="food_allergy_icon">Food Allergy Icon</string>
+    <string name="food_allergy">Food Allergy</string>
+    <string name="settings">Settings</string>
+    <string name="coins">Coins</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
