@@ -15,7 +15,7 @@ class brief3 : AppCompatActivity() {
         setContentView(R.layout.activity_brief3)
         val nextButton : Button= findViewById(R.id.buttonbrief3)
         nextButton.setOnClickListener {
-            val intent = Intent(this , Login::class.java)
+            val intent = Intent(this , SignUp::class.java)
             startActivity(intent)
         }
     }

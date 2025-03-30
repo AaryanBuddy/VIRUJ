@@ -2,13 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:title="Home"
-        android:icon="@drawable/home"/>
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home" />
     <item android:title="My Health"
+        android:id="@+id/myHealthFragment"
         android:icon="@drawable/myhealth"/>
     <item android:title="Feed"
+        android:id="@+id/feedFragment"
         android:icon="@drawable/feed"/>
     <item android:title="Notification"
+        android:id="@+id/notificationFragment"
         android:icon="@drawable/notification"/>
     <item android:title="Profile"
+        android:id="@+id/profileFragment"
         android:icon="@drawable/profile"/>
 </menu>
