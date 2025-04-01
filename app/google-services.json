@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "909134808294",
+    "project_id": "virujhealth-d1ee0",
+    "storage_bucket": "virujhealth-d1ee0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909134808294:android:d9a900780bbb52697ca727",
+        "android_client_info": {
+          "package_name": "com.example.viruj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFIAMUZwbQ7cKWz3m1Mqtn36NZKelQehg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
