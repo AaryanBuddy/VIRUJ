@@ -34,4 +34,10 @@
     <string name="coins">Coins</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="docname">docname</string>
+    <string name="docexperience">docexperience</string>
+    <string name="location_icon">location icon</string>
+    <string name="location_of_doctor">location of doctor</string>
+    <string name="time">time</string>
+    <string name="days">days</string>
 </resources>

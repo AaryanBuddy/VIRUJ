@@ -293,7 +293,7 @@
                        android:layout_width="100dp"
                        android:layout_height="30dp"
                        android:layout_marginStart="16dp"
-                       android:background="@drawable/button_gradient"
+                       android:background="@drawable/blue_button"
                        android:text="Book Now"
                        app:layout_constraintBottom_toBottomOf="parent"
                        app:layout_constraintStart_toEndOf="@id/imageView2"
@@ -364,7 +364,7 @@
                        android:layout_width="100dp"
                        android:layout_height="30dp"
                        android:layout_marginStart="16dp"
-                       android:background="@drawable/button_gradient"
+                       android:background="@drawable/blue_button"
                        android:text="Book Now"
                        app:layout_constraintBottom_toBottomOf="parent"
                        app:layout_constraintStart_toEndOf="@id/imageView3"
@@ -521,7 +521,7 @@
                         android:layout_height="100dp"
                         android:id="@+id/clinics"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/hospital"
+                        android:src="@drawable/clinics"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -532,6 +532,47 @@
                         android:layout_height="wrap_content"
                         android:text="Clinics"
                         app:layout_constraintTop_toBottomOf="@id/clinics"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20dp"
+                        android:fontFamily="@font/poppinsbold" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardElevation="9dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cardviewborder">
+
+                    <ImageView
+                        android:layout_width="125dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/pathlabs"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/pathlabs"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Path Labs"
+                        app:layout_constraintTop_toBottomOf="@id/pathlabs"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         android:layout_marginTop="5dp"

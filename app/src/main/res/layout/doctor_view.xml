@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/cardviewborder">
+
+    <ImageView
+        android:id="@+id/doc_photo"
+        android:layout_width="137dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/doc_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@id/doc_photo"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textAllCaps="true"
+        android:textSize="17dp"
+        android:text="@string/docname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/doc_name"
+        android:id="@+id/doc_experience"
+        android:layout_toEndOf="@id/doc_photo"
+        android:text="@string/docexperience"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="#269241"
+        android:textSize="14dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doc_experience"
+        android:layout_toEndOf="@id/doc_photo"
+        android:layout_marginLeft="20dp"
+        android:text="specialisation"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="14dp"
+        android:id="@+id/doc_speacialisation"
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/location"
+        android:id="@+id/location_icon"
+        android:contentDescription="@string/location_icon"
+        android:layout_toEndOf="@id/doc_photo"
+        android:layout_below="@id/doc_speacialisation"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/doc_location"
+        android:layout_toEndOf="@id/location_icon"
+        android:layout_below="@id/doc_speacialisation"
+        android:text="@string/location_of_doctor"
+        android:textSize="17dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        />
+
+    <TextView
+        android:id="@+id/availability_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doc_location"
+        android:layout_toEndOf="@+id/doc_photo"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="@string/time"
+        android:textColor="#278550"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/availability_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/availability_hours"
+        android:layout_toEndOf="@id/doc_photo"
+        android:textSize="14dp"
+        android:text="@string/days"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@color/black"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="View Details"
+        android:textSize="19dp"
+        android:textAllCaps="false"
+        android:id="@+id/detailsbtn"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_below="@id/availability_days"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blue_button"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        />
+
+
+
+</RelativeLayout>

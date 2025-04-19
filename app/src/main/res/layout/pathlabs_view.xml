@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="170dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/pathlabs_view_bg">
+
+    <ImageView
+        android:id="@+id/pathlab_image"
+        android:layout_width="145dp"
+        android:layout_height="108dp"
+        android:layout_centerVertical="true"
+        android:src = "@drawable/manipal_hospital"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:id="@+id/pathlab_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pathlab name"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:layout_toEndOf="@id/pathlab_image"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/pathlab_include_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Test : "
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:layout_toEndOf="@id/pathlab_image"
+        android:layout_below="@id/pathlab_name"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/pathlab_include_test_byuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user"
+        android:fontFamily="@font/poppinsmedium"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:layout_toEndOf="@id/pathlab_include_test"
+        android:layout_below="@id/pathlab_name"
+        />
+
+    <RatingBar
+        android:id="@+id/pathlabs_rating_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pathlab_include_test"
+        android:layout_marginStart="-46dp"
+        android:layout_toEndOf="@id/pathlab_image"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5"
+        android:theme="@style/RatingBar"
+        android:scaleX="0.55"
+        android:scaleY="0.55"
+        android:stepSize="0.1" />
+
+
+</RelativeLayout>
